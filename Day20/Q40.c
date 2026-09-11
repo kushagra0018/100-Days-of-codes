@@ -32,7 +32,7 @@ int main() {
             digit = 0;
 
         result += digit * place;
-        place *= 10;
+        place = place *10;
         n /= 10;
     }
 

@@ -31,12 +31,10 @@ int main() {
         scanf("%d", &b[i]);
     }
     
-    // Print first array
     for (i = 0; i < n; i++) {
         printf("%d ", a[i]);
     }
     
-    // Print second array
     for (i = 0; i < m; i++) {
         printf("%d ", b[i]);
     }
