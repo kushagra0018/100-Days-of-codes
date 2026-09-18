@@ -19,13 +19,12 @@ Approximate sum: 2.22
 int main() {
     int n;
     double sum = 0.0;
-
+    
+    printf("Enter the number of terms (n): ");
     scanf("%d", &n);
 
-    for (int i = 1; i <= n; i++) {
-        double numerator = 2.0 * i;
-        double denominator = 4.0 * i - 1;
-        sum += numerator / denominator;
+   for (int i = 1; i <= n; i++) {
+        sum += (2.0 * i) / (4.0 * i - 1);
     }
 
     printf("Approximate sum: %.2f", sum);
