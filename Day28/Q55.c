@@ -17,23 +17,23 @@ Output 2:
 #include <stdio.h>
 
 int main() {
-    int n, i, j, isPrime;
+    int n, i, j, count;
     
     printf("Enter a number: ");
     scanf("%d", &n);
 
     for (i = 2; i <= n; i++) {
-        isPrime = 1;
+        count = 0;
 
-        for (j = 2; j * j <= i; j++) {
+        for (j = 1; j <= i; j++) {
             if (i % j == 0) {
-                isPrime = 0;
-                break;
+                count++;
             }
         }
 
-        if (isPrime) {
-            printf("%d ", i);
+        if (count == 2) {
+        printf("%d", i);
+        printf(" ");
         }
     }
 
