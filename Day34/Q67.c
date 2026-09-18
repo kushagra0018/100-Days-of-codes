@@ -23,7 +23,7 @@ int main() {
         scanf("%d", &arr[i]);
     }
     
-    printf
+    printf("Enter the position and value to insert: ");
     scanf("%d %d", &pos, &value);
 
     for (int i = n; i > pos; i--) {
