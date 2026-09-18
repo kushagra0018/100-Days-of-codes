@@ -24,7 +24,7 @@ int main() {
     scanf("%d", &n);
 
     int arr[n];
-
+    printf("Enter the elements of the array: ");
     for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
         sum = sum + arr[i];
