@@ -46,9 +46,7 @@ int main() {
 
     for (int i = 0; i < r1; i++) {
         for (int j = 0; j < c1; j++) {
-            printf("%d", a[i][j] + b[i][j]);
-            if (j < c1 - 1)
-                printf(" ");
+            printf("%d ", a[i][j] + b[i][j]);
         }
         printf("\n");
     }
