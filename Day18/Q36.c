@@ -18,7 +18,7 @@ Output 2:
 
 int main() {
     int a, b, hcf;
-
+    printf("Enter two numbers: ");
     scanf("%d %d", &a, &b);
 
     while (b != 0) {

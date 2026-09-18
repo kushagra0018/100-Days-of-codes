@@ -15,6 +15,7 @@ Output 1:
 
 int main() {
     int n, k;
+    printf("Enter the number of elements in the array: ");
     scanf("%d", &n);
 
     int a[n];
@@ -23,11 +24,11 @@ int main() {
         scanf("%d", &a[i]);
     }
 
+    printf("Enter the number of positions to rotate right: ");  
     scanf("%d", &k);
 
     k = k % n;
 
-    // Rotate right by k positions
     for (int j = 0; j < k; j++) {
         int last = a[n - 1];
 

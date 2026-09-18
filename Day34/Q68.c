@@ -15,13 +15,15 @@ Output 1:
 
 int main() {
     int n, arr[100], pos;
-
+    
+    printf("Enter the number of elements in the array: ");
     scanf("%d", &n);
 
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-
+    
+    printf("Enter the position of the element to delete: ");    
     scanf("%d", &pos);
 
     for (int i = pos; i < n - 1; i++) {

@@ -15,13 +15,15 @@ Output 1:
 
 int main() {
     int rows, cols, sum = 0;
-
+    
+    printf("Enter the number of rows and columns: ");
     scanf("%d %d", &rows, &cols);
 
     int matrix[rows][cols];
 
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
+            printf("Enter element at position (%d, %d): ", i + 1, j + 1);
             scanf("%d", &matrix[i][j]);
             sum += matrix[i][j];
         }

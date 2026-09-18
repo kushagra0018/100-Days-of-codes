@@ -16,12 +16,14 @@ Output 1:
 int main() {
     int n, arr[100], pos, value;
 
+    printf("Enter the number of elements in the array: ");
     scanf("%d", &n);
 
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
-
+    
+    printf
     scanf("%d %d", &pos, &value);
 
     for (int i = n; i > pos; i--) {

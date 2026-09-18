@@ -29,7 +29,6 @@ int main() {
         }
     }
 
-    // Print transpose
     for (int j = 0; j < c; j++) {
         for (int i = 0; i < r; i++) {
             printf("%d ", a[i][j]);

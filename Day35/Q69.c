@@ -14,10 +14,12 @@ Output 1:
 
 int main() {
     int n;
+    printf("Enter the number of elements in the array: ");
     scanf("%d", &n);
 
     int a[n];
-
+    
+    printf("Enter the elements of the array: ");
     for (int i = 0; i < n; i++) {
         scanf("%d", &a[i]);
     }
