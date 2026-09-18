@@ -23,14 +23,16 @@ Output 2:
 int main() {
     int n, key, i;
     
+    printf("Enter the number of elements in the array: ");
     scanf("%d", &n);
     
     int arr[n];
-    
+    printf("Enter the elements of the array: ");
     for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]);
     }
     
+    printf("Enter the element to search: ");
     scanf("%d", &key);
     
     for (i = 0; i < n; i++) {
@@ -38,9 +40,10 @@ int main() {
             printf("Found at index %d", i);
             return 0;
         }
+        else if (i == n - 1) {
+            printf("Not found in the array");
+        }
     }
-    
-    printf("-1");
     
     return 0;
 }

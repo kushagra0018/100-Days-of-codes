@@ -17,6 +17,7 @@ Output 1:
 int main() {
     int n, m, i;
     
+    printf("Enter the number of elements in the first array: ");
     scanf("%d", &n);
     
     int a[n];
@@ -24,6 +25,7 @@ int main() {
         scanf("%d", &a[i]);
     }
     
+    printf("Enter the number of elements in the second array: ");
     scanf("%d", &m);
     
     int b[m];
@@ -31,12 +33,17 @@ int main() {
         scanf("%d", &b[i]);
     }
     
+    int c[n + m];
+
     for (i = 0; i < n; i++) {
-        printf("%d ", a[i]);
+        c[i] = a[i];
     }
-    
     for (i = 0; i < m; i++) {
-        printf("%d ", b[i]);
+        c[n + i] = b[i];
+    }
+
+    for (i = 0; i < n + m; i++) {
+        printf("%d ", c[i]);
     }
     
     return 0;
